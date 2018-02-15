@@ -11,6 +11,7 @@
 		98B34CF7203541510028DA6D /* TreasureMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B34CF6203541510028DA6D /* TreasureMap.swift */; };
 		98B34CF9203541F20028DA6D /* PirateShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B34CF8203541F20028DA6D /* PirateShip.swift */; };
 		98B34CFB203544270028DA6D /* PirateCrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B34CFA203544270028DA6D /* PirateCrew.swift */; };
+		98B34CFD203564F20028DA6D /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B34CFC203564F20028DA6D /* Facade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		98B34CF6203541510028DA6D /* TreasureMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureMap.swift; sourceTree = "<group>"; };
 		98B34CF8203541F20028DA6D /* PirateShip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirateShip.swift; sourceTree = "<group>"; };
 		98B34CFA203544270028DA6D /* PirateCrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirateCrew.swift; sourceTree = "<group>"; };
+		98B34CFC203564F20028DA6D /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				98B34CEF203540900028DA6D /* main.swift */,
+				98B34CFC203564F20028DA6D /* Facade.swift */,
 				98B34CF6203541510028DA6D /* TreasureMap.swift */,
 				98B34CF8203541F20028DA6D /* PirateShip.swift */,
 				98B34CFA203544270028DA6D /* PirateCrew.swift */,
@@ -130,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98B34CF0203540900028DA6D /* main.swift in Sources */,
+				98B34CFD203564F20028DA6D /* Facade.swift in Sources */,
 				98B34CFB203544270028DA6D /* PirateCrew.swift in Sources */,
 				98B34CF7203541510028DA6D /* TreasureMap.swift in Sources */,
 				98B34CF9203541F20028DA6D /* PirateShip.swift in Sources */,

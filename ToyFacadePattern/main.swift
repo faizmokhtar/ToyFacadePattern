@@ -8,21 +8,8 @@
 
 import Foundation
 
-let map = TreasureMap()
-let ship = PirateShip()
-let crew = PirateCrew()
-
-let treasureLocation = map.findTreasures(type: .galleon)
-
-// convert from map to ship coordinates
-let sequence: [Character] = ["A", "B", "C", "D", "E", "F", "G"]
-let eastWestPos = sequence.index{ $0 == treasureLocation.gridLetter }
-let shipTarget = PirateShip.ShipLocation(northSouth: Int(treasureLocation.gridNumber), eastWest: eastWestPos!)
-
-ship.moveToLocation(location: shipTarget) { location in
-  crew.performAction(action: .attackShip, callback: { prize in
-    print("Prize: \(prize) piece of eight")
-  })
+let facade = PirateFacade()
+let prize = facade.getTreasure(type: .ship)
+if prize != nil {
+  print("Prize: \(prize!) pieces of eight")
 }
-
-FileHandle.standardInput.availableData
