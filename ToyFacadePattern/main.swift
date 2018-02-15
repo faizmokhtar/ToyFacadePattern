@@ -13,3 +13,14 @@ let prize = facade.getTreasure(type: .ship)
 if prize != nil {
   print("Prize: \(prize!) pieces of eight")
 }
+
+//
+// Transparent facade example
+// Drawbacks: undermine isolation offered by facade.
+// Should be used sparingly
+//
+if prize != nil {
+  facade.crew.performAction(action: .diveForJewels, callback: { second in
+    print("Prize: \(prize!) pieces of eight")
+  })
+}

@@ -15,9 +15,9 @@ enum TreasureTypes {
 }
 
 class PirateFacade {
-  private let map = TreasureMap()
-  private let ship = PirateShip()
-  private let crew = PirateCrew()
+  let map = TreasureMap()
+  let ship = PirateShip()
+  let crew = PirateCrew()
 
   func getTreasure(type: TreasureTypes) -> Int? {
     var prizeAmount: Int?
